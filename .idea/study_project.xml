@@ -626,7 +626,7 @@
                                 <option name="answerPlaceholders">
                                   <list />
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="src/tictactoe/Main.java" />
                                 <option name="text" value="package tictactoe;&#10;&#10;public class Main {&#10;    public static void main(String[] args) {&#10;        System.out.print(&quot;O &quot;);&#10;        System.out.print(&quot;O &quot;);&#10;        System.out.println(&quot;X&quot;);&#10;        System.out.print(&quot;X &quot;);&#10;        System.out.print(&quot;X &quot;);&#10;        System.out.println(&quot;O&quot;);&#10;        System.out.print(&quot;X &quot;);&#10;        System.out.print(&quot;O &quot;);&#10;        System.out.print(&quot;X&quot;);&#10;    }&#10;}&#10;" />
                                 <option name="trackChanges" value="true" />
