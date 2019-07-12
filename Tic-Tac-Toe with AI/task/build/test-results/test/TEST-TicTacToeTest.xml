@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-07-12T09:04:17" hostname="LAPTOP-DV0RB4CC" time="0.205">
+  <properties/>
+  <testcase name="start" classname="TicTacToeTest" time="0.205"/>
+  <system-out><![CDATA[Enter cells: ---------
+| X   X |
+|   O   |
+|       |
+---------
+Enter the coordinates: 
+---------
+| X   X |
+| X O   |
+|       |
+---------
+Enter cells: ---------
+| X   X |
+|   O   |
+|       |
+---------
+Enter the coordinates: 
+---------
+| X   X |
+|   O   |
+| X     |
+---------
+Enter cells: ---------
+| X   X |
+|   O   |
+|       |
+---------
+Enter the coordinates: 
+---------
+| X   X |
+|   O X |
+|       |
+---------
+Enter cells: ---------
+| X   X |
+|   O   |
+|       |
+---------
+Enter the coordinates: 
+---------
+| X   X |
+|   O   |
+|   X   |
+---------
+Enter cells: ---------
+|   X X |
+| O O   |
+| O X   |
+---------
+Enter the coordinates: 
+---------
+| X X X |
+| O O   |
+| O X   |
+---------
+Enter cells: ---------
+|   X X |
+| O O   |
+| O X   |
+---------
+Enter the coordinates: 
+---------
+|   X X |
+| O O   |
+| O X X |
+---------
+Enter cells: ---------
+|   X X |
+| O O   |
+| O X   |
+---------
+Enter the coordinates: 
+---------
+|   X X |
+| O O X |
+| O X   |
+---------
+]]></system-out>
+  <system-err><![CDATA[Start test 1
+Start test 2
+Start test 3
+Start test 4
+Start test 5
+Start test 6
+Start test 7
+]]></system-err>
+</testsuite>
