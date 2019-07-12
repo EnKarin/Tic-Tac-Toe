@@ -27,20 +27,33 @@ public class Main {
                 mat[i][j] = move.charAt(w);
             }
         }
-
-        System.out.print("Enter the coordinates: ");
-        int r = scanner.nextInt();
-        int l = scanner.nextInt();
-        mat[3 - l][r - 1] = 'X';
-        String c1 = "| " + mat[0][0] + " " + mat[0][1] + " " + mat[0][2] + " |";
-        String c2 = "| " + mat[1][0] + " " + mat[1][1] + " " + mat[1][2] + " |";
-        String c3 = "| " + mat[2][0] + " " + mat[2][1] + " " + mat[2][2] + " |";
-        System.out.println();
-        System.out.println("---------");
-        System.out.println(c1);
-        System.out.println(c2);
-        System.out.println(c3);
-        System.out.println("---------");
+        while(true) {
+            System.out.print("Enter the coordinates: ");
+            int r = scanner.nextInt();
+            int l = scanner.nextInt();
+            if(r <= 3 && r > 0 && l > 0 && l <= 3 && mat[3 - l][r - 1] == ' ') {
+                mat[3 - l][r - 1] = 'X';
+                String c1 = "| " + mat[0][0] + " " + mat[0][1] + " " + mat[0][2] + " |";
+                String c2 = "| " + mat[1][0] + " " + mat[1][1] + " " + mat[1][2] + " |";
+                String c3 = "| " + mat[2][0] + " " + mat[2][1] + " " + mat[2][2] + " |";
+                System.out.println();
+                System.out.println("---------");
+                System.out.println(c1);
+                System.out.println(c2);
+                System.out.println(c3);
+                System.out.println("---------");
+                break;
+            }
+            else if((r < '1' || r > '9') && (l < '1' || l > '9')){
+                System.out.println("You should enter numbers!");
+            }
+            else if(r > 3 || r < 0 || l > 3 || l < 0){
+                System.out.println("Coordinates should be from 1 to 3!");
+            }
+            else if(mat[3 - l][r - 1] != ' '){
+                System.out.println("This cell is occupied! Choose another one!");
+            }
+        }
 
         /*for(int i = 0; i < 3 && flag; i++){ //Если ходов одного игрока значительно больше, чем другого
             for(int j = 0; j < 3; j++){
