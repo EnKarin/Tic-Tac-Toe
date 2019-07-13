@@ -7,7 +7,6 @@ public class Main {
         String c1 = "| " + mat[0][0] + " " + mat[0][1] + " " + mat[0][2] + " |";
         String c2 = "| " + mat[1][0] + " " + mat[1][1] + " " + mat[1][2] + " |";
         String c3 = "| " + mat[2][0] + " " + mat[2][1] + " " + mat[2][2] + " |";
-        System.out.println();
         System.out.println("---------");
         System.out.println(c1);
         System.out.println(c2);
@@ -173,6 +172,7 @@ public class Main {
             }
             System.out.print("Input command: ");
             String command = scan.nextLine();
+            printmat(mat);
             switch (command) {
                 case "start easy easy":
                     do {
