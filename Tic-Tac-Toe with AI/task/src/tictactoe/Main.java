@@ -15,14 +15,14 @@ public class Main {
         System.out.println("---------");
     }
 
-    private static void userStep (char[][] mat){
+    private static void userStep (char[][] mat, char h){
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.print("Enter the coordinates: ");
             int r = scanner.nextInt();
             int l = scanner.nextInt();
             if (r <= 3 && r > 0 && l > 0 && l <= 3 && mat[3 - l][r - 1] == ' ') {
-                mat[3 - l][r - 1] = 'X';
+                mat[3 - l][r - 1] = h;
                 printmat(mat);
                 break;
             } else if ((r < '1' || r > '9') && (l < '1' || l > '9')) {
@@ -73,13 +73,13 @@ public class Main {
             }
         }
         if(win1 == 3 && flag){ //Победа "х"
-            System.out.printf("X wins");
+            System.out.println("X wins");
             flag = false;
             return false;
         }
         else if(win2 == 3 && flag){ //Победа "о"
             flag = false;
-            System.out.printf("O wins");
+            System.out.println("O wins");
             return false;
         }
 
@@ -93,12 +93,12 @@ public class Main {
                 q++;
             }
             if(k == 3){
-                System.out.printf("X wins");
+                System.out.println("X wins");
                 flag = false;
                 return false;
             }
             else if(q == 3){
-                System.out.printf("O wins");
+                System.out.println("O wins");
                 flag = false;
                 return false;
             }
@@ -114,12 +114,12 @@ public class Main {
                 w++;
             }
             if(g == 3){
-                System.out.printf("X wins");
+                System.out.println("X wins");
                 flag = false;
                 return false;
             }
             else if(w == 3){
-                System.out.printf("O wins");
+                System.out.println("O wins");
                 flag = false;
                 return false;
             }
@@ -128,7 +128,7 @@ public class Main {
         for(int i = 0; i < 3 && flag; i++) {
             for (int j = 0; j < 3; j++) {
                 if (mat[i][j] != ' ' && i == 2 && j == 2) { //Нет выигравшего и нет пустых ячеек
-                    System.out.print("Draw");
+                    System.out.println("Draw");
                     flag = false;
                     return false;
                 }
@@ -140,14 +140,14 @@ public class Main {
         return false;
     }
 
-    private static void easyLevel(char[][] mat){
+    private static void easyLevel(char[][] mat, char h){
         Random rand = new Random();
         int x, y;
         while(true) {
             x = rand.nextInt(3);
             y = rand.nextInt(3);
             if(mat[x][y] == ' '){
-                mat[x][y] = 'O';
+                mat[x][y] = h;
                 System.out.println("Making move level \"easy\"");
                 printmat(mat);
                 break;
@@ -157,18 +157,68 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        char h;
+        boolean flag = true;
         char[][] mat = new char[3][3]; //Заполнение матрицы ходов
-        for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
                 mat[i][j] = ' ';
             }
         }
-        do {
-            userStep(mat);
-            if(!printState(mat)){
-                break;
+        while (flag) {
+            System.out.print("Input command: ");
+            String command = scan.nextLine();
+            switch (command) {
+                case "start easy easy":
+                    do {
+                        h = 'X';
+                        easyLevel(mat, h);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        h = 'O';
+                        easyLevel(mat, h);
+                    } while (printState(mat));
+                    break;
+                case "start easy user":
+                    do {
+                        h = 'X';
+                        easyLevel(mat, h);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        h = 'O';
+                        userStep(mat, h);
+                    } while (printState(mat));
+                    break;
+                case "start user easy":
+                    do {
+                        h = 'X';
+                        userStep(mat, h);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        h = 'O';
+                        easyLevel(mat, h);
+                    } while (printState(mat));
+                    break;
+                case "start user user":
+                    do {
+                        h = 'X';
+                        userStep(mat, h);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        h = 'O';
+                        userStep(mat, h);
+                    } while (printState(mat));
+                    break;
+                case "exit":
+                    flag = false;
+                    break;
+                default:
+                    System.out.println("Bad parameters!");
             }
-            easyLevel(mat);
-        }while(printState(mat));
+        }
     }
 }
