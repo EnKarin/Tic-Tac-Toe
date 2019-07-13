@@ -1,5 +1,6 @@
 package tictactoe;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
     private static void printmat (char[][] mat){
@@ -159,6 +160,20 @@ public class Main {
             }
         }
     }
+    private static void easyLevel(char[][] mat){
+        Random rand = new Random();
+        int x, y;
+        while(true) {
+            x = rand.nextInt(3);
+            y = rand.nextInt(3);
+            if(mat[x][y] == ' '){
+                mat[x][y] = 'X';
+                System.out.println("Making move level \"easy\"");
+                printmat(mat);
+                break;
+            }
+        }
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -180,6 +195,6 @@ public class Main {
                 mat[i][j] = move.charAt(w);
             }
         }
-        userStep(mat);
+        easyLevel(mat);
     }
 }
