@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c7e6a2-8e91-42d9-a6c2-6cf3405856e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/study_project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/study_project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/test/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/test/TicTacToeTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -44,8 +47,8 @@
           <provider selected="true" editor-type-id="StudyEditor">
             <state>
               <EduEditorState>
-                <MainEditorState relative-caret-position="323">
-                  <caret line="179" column="36" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
+                <MainEditorState relative-caret-position="319">
+                  <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -156,21 +159,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 15h 52m 12s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 15h 52m 52s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 15h 55m 40s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 15h 57m 02s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 15h 59m 24s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 16h 00m 42s.xml">
       <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -186,9 +174,24 @@
     <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 20h 36m 30s.xml">
       <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 14h 39m 55s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 15h 09m 01s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 15h 13m 18s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 15h 17m 46s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 15h 19m 00s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.18159807" />
@@ -228,8 +231,8 @@
       <provider selected="true" editor-type-id="StudyEditor">
         <state>
           <EduEditorState>
-            <MainEditorState relative-caret-position="323">
-              <caret line="179" column="36" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
+            <MainEditorState relative-caret-position="319">
+              <caret line="168" column="22" selection-start-line="168" selection-start-column="22" selection-end-line="168" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>

@@ -35,27 +35,11 @@ public class Main {
         }
     }
 
-    private static void printState (char[][] mat){
+    private static boolean printState (char[][] mat){
         boolean flag = true;
         int win1 = 0;
         int win2 = 0;
-        int x = 0, o = 0;
-        for(int i = 0; i < 3 && flag; i++){ //Если ходов одного игрока значительно больше, чем другого
-            for(int j = 0; j < 3; j++){
-                if(mat[i][j] == 'X'){
-                    x++;
-                }
-                else if(mat[i][j] == 'O'){
-                    o++;
-                }
-            }
-        }
-        if(x - 1 > o || o - 1 > x) {
-            System.out.printf("Impossible");
-            flag = false;
-        }
-
-        for(int i = 0; i < 3 && flag; i++){ //Если по горизонтали имеются 3 'х' и 3 'о'
+        for(int i = 0; i < 3 && flag; i++){ //по горизонтали
             if(win1 != 3){
                 win1 = 0;
             }
@@ -69,15 +53,10 @@ public class Main {
                 else if(mat[i][j] == 'O' && win2 < 3){
                     win2++;
                 }
-                if (win2 == 3 && win1 == 3){
-                    flag = false;
-                    System.out.printf("Impossible");
-                    break;
-                }
             }
         }
 
-        for(int i = 0; i < 3 && flag; i++){//Если по вертикали имеются 3 "х" и 3 "о"
+        for(int i = 0; i < 3 && flag; i++){//по вертикали
             if(win1 != 3){
                 win1 = 0;
             }
@@ -91,20 +70,17 @@ public class Main {
                 else if(mat[j][i] == 'O' && win2 < 3){
                     win2++;
                 }
-                if (win2 == 3 && win1 == 3){
-                    flag = false;
-                    System.out.printf("Impossible");
-                    break;
-                }
             }
         }
         if(win1 == 3 && flag){ //Победа "х"
-            flag = false;
             System.out.printf("X wins");
+            flag = false;
+            return false;
         }
         else if(win2 == 3 && flag){ //Победа "о"
             flag = false;
             System.out.printf("O wins");
+            return false;
         }
 
         int k = 0, q = 0;
@@ -117,12 +93,14 @@ public class Main {
                 q++;
             }
             if(k == 3){
-                flag = false;
                 System.out.printf("X wins");
+                flag = false;
+                return false;
             }
             else if(q == 3){
-                flag = false;
                 System.out.printf("O wins");
+                flag = false;
+                return false;
             }
         }
 
@@ -136,30 +114,32 @@ public class Main {
                 w++;
             }
             if(g == 3){
-                flag = false;
                 System.out.printf("X wins");
+                flag = false;
+                return false;
             }
             else if(w == 3){
-                flag = false;
                 System.out.printf("O wins");
+                flag = false;
+                return false;
             }
         }
 
         for(int i = 0; i < 3 && flag; i++) {
             for (int j = 0; j < 3; j++) {
-                if (mat[i][j] == ' ') { //Имеются пустые ячейки, но нет выигравшего
-                    System.out.print("Game not finished");
-                    flag = false;
-                    break;
-                }
                 if (mat[i][j] != ' ' && i == 2 && j == 2) { //Нет выигравшего и нет пустых ячеек
                     System.out.print("Draw");
                     flag = false;
-                    break;
+                    return false;
+                }
+                if (mat[i][j] == ' ') { //Имеются пустые ячейки, но нет выигравшего
+                    return true;
                 }
             }
         }
+        return false;
     }
+
     private static void easyLevel(char[][] mat){
         Random rand = new Random();
         int x, y;
@@ -167,7 +147,7 @@ public class Main {
             x = rand.nextInt(3);
             y = rand.nextInt(3);
             if(mat[x][y] == ' '){
-                mat[x][y] = 'X';
+                mat[x][y] = 'O';
                 System.out.println("Making move level \"easy\"");
                 printmat(mat);
                 break;
@@ -176,25 +156,19 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter cells: ");
-        String input = scanner.nextLine();
-        String move = input.substring(1, 10);
-        String s1 = "| " + move.charAt(0) + " " + move.charAt(1) + " " + move.charAt(2) + " |";
-        String s2 = "| " + move.charAt(3) + " " + move.charAt(4) + " " + move.charAt(5) + " |";
-        String s3 = "| " + move.charAt(6) + " " + move.charAt(7) + " " + move.charAt(8) + " |";
-        System.out.println("---------");
-        System.out.println(s1);
-        System.out.println(s2);
-        System.out.println(s3);
-        System.out.println("---------");
-
+        Scanner scan = new Scanner(System.in);
         char[][] mat = new char[3][3]; //Заполнение матрицы ходов
-        for(int i = 0, w = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++, w++){
-                mat[i][j] = move.charAt(w);
+        for(int i = 0; i < 3; i++){
+            for(int j = 0; j < 3; j++){
+                mat[i][j] = ' ';
             }
         }
-        easyLevel(mat);
+        do {
+            userStep(mat);
+            if(!printState(mat)){
+                break;
+            }
+            easyLevel(mat);
+        }while(printState(mat));
     }
 }
