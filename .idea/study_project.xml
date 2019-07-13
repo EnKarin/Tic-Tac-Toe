@@ -335,7 +335,7 @@
           <option name="items">
             <list>
               <FrameworkLesson>
-                <option name="currentTaskIndex" value="8" />
+                <option name="currentTaskIndex" value="9" />
                 <option name="customPresentableName" />
                 <option name="id" value="0" />
                 <option name="index" value="1" />
@@ -749,8 +749,8 @@
                       <option name="id" value="5405" />
                       <option name="index" value="9" />
                       <option name="name" value="Make a &quot;medium&quot; difficulty level" />
-                      <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="record" value="9" />
+                      <option name="status" value="Solved" />
                       <option name="files">
                         <map>
                           <entry key="test/TicTacToeTest.java">
