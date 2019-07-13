@@ -335,7 +335,7 @@
           <option name="items">
             <list>
               <FrameworkLesson>
-                <option name="currentTaskIndex" value="7" />
+                <option name="currentTaskIndex" value="8" />
                 <option name="customPresentableName" />
                 <option name="id" value="0" />
                 <option name="index" value="1" />
@@ -700,8 +700,8 @@
                       <option name="id" value="5404" />
                       <option name="index" value="8" />
                       <option name="name" value="Create a start menu" />
-                      <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="record" value="8" />
+                      <option name="status" value="Solved" />
                       <option name="files">
                         <map>
                           <entry key="test/TicTacToeTest.java">
