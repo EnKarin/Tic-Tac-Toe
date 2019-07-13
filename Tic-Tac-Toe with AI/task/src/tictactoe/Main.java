@@ -35,18 +35,15 @@ public class Main {
     }
 
     private static boolean printState (char[][] mat){
-        boolean flag = true;
         int win1 = 0;
         int win2 = 0;
-        for(int i = 0; i < 3 && flag; i++){ //по горизонтали
+        for(int i = 0; i < 3; i++){ //по горизонтали
             if(win1 == 3){
                 System.out.println("X wins");
-                flag = false;
                 return false;
             }
             else win1 = 0;
             if(win2 == 3){
-                flag = false;
                 System.out.println("O wins");
                 return false;
             }
@@ -62,7 +59,7 @@ public class Main {
         }
         win1 = 0;
         win2 = 0;
-        for(int i = 0; i < 3 && flag; i++){//по вертикали
+        for(int i = 0; i < 3; i++){//по вертикали
             for(int j = 0; j < 3; j++){
                 if(mat[j][i] == 'X' && win1 < 3){
                     win1++;
@@ -72,13 +69,11 @@ public class Main {
                 }
             }
             if(win1 == 3){
-                flag = false;
                 System.out.println("X wins");
                 return false;
             }
             else win1 = 0;
             if(win2 == 3){
-                flag = false;
                 System.out.println("O wins");
                 return false;
             }
@@ -86,7 +81,7 @@ public class Main {
         }
 
         int k = 0, q = 0;
-        for(int i = 0; i < 3 && flag; i++){//Победа по главной диагонали
+        for(int i = 0; i < 3; i++){//Победа по главной диагонали
             int j = i;
             if(mat[i][j] == 'X'){
                 k++;
@@ -96,18 +91,16 @@ public class Main {
             }
             if(k == 3){
                 System.out.println("X wins");
-                flag = false;
                 return false;
             }
             else if(q == 3){
                 System.out.println("O wins");
-                flag = false;
                 return false;
             }
         }
 
         int g = 0, w = 0;
-        for(int i = 0; i < 3 && flag; i++){//Победа по побочной диагонали
+        for(int i = 0; i < 3; i++){//Победа по побочной диагонали
             int j = 3 - i - 1;
             if( mat[i][j] == 'X'){
                 g++;
@@ -117,21 +110,18 @@ public class Main {
             }
             if(g == 3){
                 System.out.println("X wins");
-                flag = false;
                 return false;
             }
             else if(w == 3){
                 System.out.println("O wins");
-                flag = false;
                 return false;
             }
         }
 
-        for(int i = 0; i < 3 && flag; i++) {
+        for(int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (mat[i][j] != ' ' && i == 2 && j == 2) { //Нет выигравшего и нет пустых ячеек
                     System.out.println("Draw");
-                    flag = false;
                     return false;
                 }
                 if (mat[i][j] == ' ') { //Имеются пустые ячейки, но нет выигравшего
@@ -164,7 +154,6 @@ public class Main {
         for(int i = 0; i < 3; i++){//добавление третьего по горизонтали
             win1 = 0;
             win2 = 0;
-            zero = 0;
             for(int j = 0; j < 3; j++){
                 if(mat[i][j] == 'X'){
                     win1++;
@@ -189,7 +178,6 @@ public class Main {
         for(int i = 0; i < 3; i++) {//добавление третьего по вертикали
             win1 = 0;
             win2 = 0;
-            zero = 0;
             for (int j = 0; j < 3; j++) {
                 if (mat[j][i] == 'X') {
                     win1++;
@@ -210,7 +198,6 @@ public class Main {
         }
 
         int k = 0, q = 0;
-        zero = 0;
         for(int i = 0; i < 3 ; i++){//Добавление третьего по главной диагонали
             if(mat[i][i] == 'X'){
                 k++;
@@ -230,7 +217,6 @@ public class Main {
         }
 
         int g = 0, w = 0;
-        zero = 0;
         for(int i = 0; i < 3; i++){//Добавление третьего по побочной диагонали
             if( mat[i][2 - i] == 'X'){
                 g++;
