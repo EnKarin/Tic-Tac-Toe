@@ -60,8 +60,17 @@ public class Main {
                 }
             }
         }
-
+        win1 = 0;
+        win2 = 0;
         for(int i = 0; i < 3 && flag; i++){//по вертикали
+            for(int j = 0; j < 3; j++){
+                if(mat[j][i] == 'X' && win1 < 3){
+                    win1++;
+                }
+                else if(mat[j][i] == 'O' && win2 < 3){
+                    win2++;
+                }
+            }
             if(win1 == 3){
                 flag = false;
                 System.out.println("X wins");
@@ -74,14 +83,6 @@ public class Main {
                 return false;
             }
             else win2 = 0;
-            for(int j = 0; j < 3; j++){
-                if(mat[j][i] == 'X' && win1 < 3){
-                    win1++;
-                }
-                else if(mat[j][i] == 'O' && win2 < 3){
-                    win2++;
-                }
-            }
         }
 
         int k = 0, q = 0;
@@ -209,55 +210,52 @@ public class Main {
         }
 
         int k = 0, q = 0;
+        zero = 0;
         for(int i = 0; i < 3 ; i++){//Добавление третьего по главной диагонали
-            zero = 0;
-            int j = i;
-            if(mat[i][j] == 'X'){
+            if(mat[i][i] == 'X'){
                 k++;
             }
-            else if(mat[i][j] == 'O'){
+            else if(mat[i][i] == 'O'){
                 q++;
             }
-            else if(mat[i][j] == ' '){
+            else if(mat[i][i] == ' '){
                 zero = i;
             }
-            if((k == 2 || q == 2) && mat[zero][zero] == ' '){
-                mat[zero][zero] = h;
-                System.out.println("Making move level \"medium\"");
-                printmat(mat);
-                return;
-            }
+        }
+        if((k == 2 || q == 2) && mat[zero][zero] == ' ') {
+            mat[zero][zero] = h;
+            System.out.println("Making move level \"medium\"");
+            printmat(mat);
+            return;
         }
 
         int g = 0, w = 0;
+        zero = 0;
         for(int i = 0; i < 3; i++){//Добавление третьего по побочной диагонали
-            zero = 0;
-            int j = 3 - i - 1;
-            if( mat[i][j] == 'X'){
+            if( mat[i][2 - i] == 'X'){
                 g++;
             }
-            else if(mat[i][j] == 'O'){
+            else if(mat[i][2 - i] == 'O'){
                 w++;
             }
-            else if(mat[i][j] == ' '){
+            else if(mat[i][2 - i] == ' '){
                 zero = i;
             }
-            if((g == 2 || w == 2) && mat[i][2 - i] == ' '){
-                mat[i][2 - i] = h;
+        }
+        if((g == 2 || w == 2) && mat[zero][2 - zero] == ' '){
+            mat[zero][2 - zero] = h;
+            System.out.println("Making move level \"medium\"");
+            printmat(mat);
+            return;
+        }
+        while(true) {
+            x = rand.nextInt(3);
+            y = rand.nextInt(3);
+            if(mat[x][y] == ' '){
+                mat[x][y] = h;
                 System.out.println("Making move level \"medium\"");
                 printmat(mat);
                 return;
-            }
-        }
-
-            while(true) {
-                x = rand.nextInt(3);
-                y = rand.nextInt(3);
-                if(mat[x][y] == ' '){
-                    mat[x][y] = h;
-                    System.out.println("Making move level \"medium\"");
-                    printmat(mat);
-                    return;
             }
         }
     }
