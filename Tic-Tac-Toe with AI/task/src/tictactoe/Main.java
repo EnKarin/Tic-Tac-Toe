@@ -246,9 +246,143 @@ public class Main {
         }
     }
 
+    private static void hardLevel(char[][] mat, char h) {
+        Random rand = new Random();
+        int win1 = 0, win2 = 0, zero = 0;
+        int x, y;
+        char pl2;
+        if(h == 'X'){
+            pl2 = 'O';
+        }
+        else pl2 = 'X';
+        for(int i = 0; i < 3; i++){//добавление третьего по горизонтали
+            win1 = 0;
+            win2 = 0;
+            for(int j = 0; j < 3; j++){
+                if(mat[i][j] == 'X'){
+                    win1++;
+                }
+                else if(mat[i][j] == 'O'){
+                    win2++;
+                }
+                else if(mat[i][j] == ' '){
+                    zero = j;
+                }
+            }
+            if(win1 == 2 || win2 == 2) {
+                if (mat[i][zero] == ' ') {
+                    mat[i][zero] = h;
+                    System.out.println("Making move level \"hard\"");
+                    printmat(mat);
+                    return;
+                }
+            }
+        }
+
+        for(int i = 0; i < 3; i++) {//добавление третьего по вертикали
+            win1 = 0;
+            win2 = 0;
+            for (int j = 0; j < 3; j++) {
+                if (mat[j][i] == 'X') {
+                    win1++;
+                } else if (mat[j][i] == 'O') {
+                    win2++;
+                } else if (mat[j][i] == ' ') {
+                    zero = j;
+                }
+            }
+            if (win1 == 2 || win2 == 2) {
+                if (mat[zero][i] == ' ') {
+                    mat[zero][i] = h;
+                    System.out.println("Making move level \"hard\"");
+                    printmat(mat);
+                    return;
+                }
+            }
+        }
+
+        int k = 0, q = 0;
+        for(int i = 0; i < 3 ; i++){//Добавление третьего по главной диагонали
+            if(mat[i][i] == 'X'){
+                k++;
+            }
+            else if(mat[i][i] == 'O'){
+                q++;
+            }
+            else if(mat[i][i] == ' '){
+                zero = i;
+            }
+        }
+        if((k == 2 || q == 2) && mat[zero][zero] == ' ') {
+            mat[zero][zero] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+
+        int g = 0, w = 0;
+        for(int i = 0; i < 3; i++){//Добавление третьего по побочной диагонали
+            if( mat[i][2 - i] == 'X'){
+                g++;
+            }
+            else if(mat[i][2 - i] == 'O'){
+                w++;
+            }
+            else if(mat[i][2 - i] == ' '){
+                zero = i;
+            }
+        }
+        if((g == 2 || w == 2) && mat[zero][2 - zero] == ' '){
+            mat[zero][2 - zero] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+        if(mat[2][2] == ' '){
+            mat[2][2] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+        if(mat[0][0] == ' ' && mat[2][2] != pl2){
+            mat[0][0] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+        if(mat[2][2] == ' ' && mat[0][0] != pl2){
+            mat[2][2] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+        if(mat[0][2] == ' ' && mat[2][0] != pl2){
+            mat[0][2] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+        if(mat[2][0] == ' ' && mat[0][2] != pl2){
+            mat[2][0] = h;
+            System.out.println("Making move level \"hard\"");
+            printmat(mat);
+            return;
+        }
+        while(true) {
+            x = rand.nextInt(3);
+            y = rand.nextInt(3);
+            if(mat[x][y] == ' '){
+                mat[x][y] = h;
+                System.out.println("Making move level \"hard\"");
+                printmat(mat);
+                return;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        char h;
+        char hum, ai;
         boolean flag = true;
         char[][] mat = new char[3][3]; //Заполнение матрицы ходов
         for (int i = 0; i < 3; i++) {
@@ -268,109 +402,182 @@ public class Main {
                 case "start easy easy":
                     printmat(mat);
                     do {
-                        h = 'X';
-                        easyLevel(mat, h);
+                        ai = 'X';
+                        easyLevel(mat, ai);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        easyLevel(mat, h);
+                        ai = 'O';
+                        easyLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "start medium medium":
                     printmat(mat);
                     do {
-                        h = 'X';
-                        mediumLevel(mat, h);
+                        ai = 'X';
+                        mediumLevel(mat, ai);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        mediumLevel(mat, h);
+                        ai = 'O';
+                        mediumLevel(mat, ai);
+                    } while (printState(mat));
+                    break;
+                case "start hard hard":
+                    printmat(mat);
+                    do {
+                        ai = 'X';
+                        hardLevel(mat, ai);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        ai = 'O';
+                        hardLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "start easy user":
                     printmat(mat);
+                    ai = 'X';
+                    hum = 'O';
                     do {
-                        h = 'X';
-                        easyLevel(mat, h);
+                        easyLevel(mat, ai);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        userStep(mat, h);
+                        userStep(mat, hum);
+                    } while (printState(mat));
+                    break;
+                case "start hard user":
+                    printmat(mat);
+                    ai = 'X';
+                    hum = 'O';
+                    do {
+                        hardLevel(mat, ai);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        userStep(mat, hum);
                     } while (printState(mat));
                     break;
                 case "start medium user":
                     printmat(mat);
+                    ai = 'X';
+                    hum = 'O';
                     do {
-                        h = 'X';
-                        mediumLevel(mat, h);
+                        mediumLevel(mat, ai);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        userStep(mat, h);
+                        userStep(mat, hum);
+                    } while (printState(mat));
+                    break;
+                case "start user hard":
+                    printmat(mat);
+                    hum = 'X';
+                    ai = 'O';
+                    do {
+                        hum = 'X';
+                        userStep(mat, hum);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        hardLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "start user easy":
                     printmat(mat);
+                    ai = 'O';
+                    hum = 'X';
                     do {
-                        h = 'X';
-                        userStep(mat, h);
+                        userStep(mat, hum);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        easyLevel(mat, h);
+                        easyLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "start user medium":
                     printmat(mat);
+                    hum = 'X';
+                    ai = 'O';
                     do {
-                        h = 'X';
-                        userStep(mat, h);
+                        userStep(mat, hum);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        mediumLevel(mat, h);
+                        mediumLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "start user user":
                     printmat(mat);
                     do {
-                        h = 'X';
-                        userStep(mat, h);
+                        hum = 'X';
+                        userStep(mat, hum);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        userStep(mat, h);
+                        hum = 'O';
+                        userStep(mat, hum);
                     } while (printState(mat));
                     break;
                 case "start medium easy":
                     printmat(mat);
                     do {
-                        h = 'X';
-                        mediumLevel(mat, h);
+                        ai = 'X';
+                        mediumLevel(mat, ai);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        easyLevel(mat, h);
+                        ai = 'O';
+                        easyLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "start easy medium":
                     printmat(mat);
                     do {
-                        h = 'X';
-                        easyLevel(mat, h);
+                        ai = 'X';
+                        easyLevel(mat, ai);
                         if (!printState(mat)) {
                             break;
                         }
-                        h = 'O';
-                        mediumLevel(mat, h);
+                        ai = 'O';
+                        mediumLevel(mat, ai);
+                    } while (printState(mat));
+                    break;
+                case "start easy hard":
+                    printmat(mat);
+                    do {
+                        ai = 'X';
+                        easyLevel(mat, ai);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        ai = 'O';
+                        hardLevel(mat, ai);
+                    } while (printState(mat));
+                    break;
+                case "start hard easy":
+                    printmat(mat);
+                    do {
+                        ai = 'X';
+                        hardLevel(mat, ai);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        ai = 'O';
+                        easyLevel(mat, ai);
+                    } while (printState(mat));
+                    break;
+                case "start medium hard":
+                    printmat(mat);
+                    do {
+                        ai = 'X';
+                        mediumLevel(mat, ai);
+                        if (!printState(mat)) {
+                            break;
+                        }
+                        ai = 'O';
+                        hardLevel(mat, ai);
                     } while (printState(mat));
                     break;
                 case "exit":

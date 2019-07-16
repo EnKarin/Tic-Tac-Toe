@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c7e6a2-8e91-42d9-a6c2-6cf3405856e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.3.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/study_project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/study_project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/main/tictactoe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/main/tictactoe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/Clue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/Clue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeField.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/classes/java/test/TicTacToeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/classes/TicTacToeTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/classes/TicTacToeTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/reports/tests/test/packages/default-package.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/TEST-TicTacToeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/TEST-TicTacToeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -63,8 +45,8 @@
           <provider selected="true" editor-type-id="StudyEditor">
             <state>
               <EduEditorState>
-                <MainEditorState relative-caret-position="-68">
-                  <caret line="231" column="25" lean-forward="true" selection-start-line="231" selection-start-column="25" selection-end-line="231" selection-end-column="25" />
+                <MainEditorState relative-caret-position="680">
+                  <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -87,7 +69,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="31" />
+    <option name="x" value="30" />
     <option name="y" value="429" />
     <option name="width" value="1890" />
     <option name="height" value="960" />
@@ -98,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Course">
         <subPane>
           <expand>
@@ -120,7 +103,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
@@ -186,16 +168,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563026174242</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed incorrect substitution in the diagonal">
+      <created>1563033980389</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563033980389</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Removed unnecessary checks">
+      <created>1563035286968</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563035286968</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 16h 04m 17s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.12 at 20h 36m 30s.xml">
-      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 14h 39m 55s.xml">
       <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
     </history-entry>
@@ -220,11 +210,18 @@
     <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.13 at 20h 51m 28s.xml">
       <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.17 at 03h 31m 36s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="Tests_in_'Tic-Tac-Toe_with_AI-task_test' - 2019.07.17 at 03h 36m 06s.xml">
+      <configuration name="Tests in 'Tic-Tac-Toe_with_AI-task_test'" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.18886198" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.19128329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -260,15 +257,17 @@
     <MESSAGE value="bagfix" />
     <MESSAGE value="Removed extra blank line" />
     <MESSAGE value="Make a &quot;medium&quot; difficulty level" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make a &quot;medium&quot; difficulty level" />
+    <MESSAGE value="Fixed incorrect substitution in the diagonal" />
+    <MESSAGE value="Removed unnecessary checks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary checks" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java">
       <provider selected="true" editor-type-id="StudyEditor">
         <state>
           <EduEditorState>
-            <MainEditorState relative-caret-position="-68">
-              <caret line="231" column="25" lean-forward="true" selection-start-line="231" selection-start-column="25" selection-end-line="231" selection-end-column="25" />
+            <MainEditorState relative-caret-position="680">
+              <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
