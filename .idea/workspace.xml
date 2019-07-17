@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60c7e6a2-8e91-42d9-a6c2-6cf3405856e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -46,7 +44,7 @@
             <state>
               <EduEditorState>
                 <MainEditorState relative-caret-position="255">
-                  <caret line="380" column="8" lean-forward="true" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
+                  <caret line="380" column="8" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#printmat#0;class#Main#0" />
@@ -94,8 +92,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="Course">
         <subPane>
@@ -119,6 +115,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +234,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.19774011" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.20096852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -297,7 +295,7 @@
         <state>
           <EduEditorState>
             <MainEditorState relative-caret-position="255">
-              <caret line="380" column="8" lean-forward="true" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
+              <caret line="380" column="8" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printmat#0;class#Main#0" />
