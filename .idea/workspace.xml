@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60c7e6a2-8e91-42d9-a6c2-6cf3405856e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/study_project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/study_project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/out/production/classes/tictactoe/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -45,10 +45,19 @@
           <provider selected="true" editor-type-id="StudyEditor">
             <state>
               <EduEditorState>
-                <MainEditorState relative-caret-position="680">
-                  <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
+                <MainEditorState relative-caret-position="255">
+                  <caret line="380" column="8" lean-forward="true" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#printmat#0;class#Main#0" />
+                    <element signature="method#userStep#0;class#Main#0" />
+                    <element signature="method#printState#0;class#Main#0" />
+                    <element signature="method#easyLevel#0;class#Main#0" />
+                    <element signature="method#mediumLevel#0;class#Main#0" />
+                    <element signature="e#5592#6265#1" />
+                    <element signature="e#7698#11771#0" />
+                    <element signature="method#hardLevel#0;class#Main#0" />
+                    <element signature="method#main#0;class#Main#0" />
                   </folding>
                 </MainEditorState>
               </EduEditorState>
@@ -60,6 +69,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="olesha" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -81,6 +95,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="Course">
         <subPane>
           <expand>
@@ -103,12 +119,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tic-Tac-Toe/Tic-Tac-Toe.iml" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
   <component name="RunDashboard">
@@ -221,7 +236,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.19128329" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911818" visible="true" weight="0.19774011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -245,7 +260,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Task" order="4" visible="true" weight="0.20258273" />
+      <window_info anchor="right" id="Task" order="4" weight="0.20258273" />
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -261,15 +276,39 @@
     <MESSAGE value="Removed unnecessary checks" />
     <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary checks" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../Tic-Tac-Toe/Tic-Tac-Toe.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tic-Tac-Toe with AI/task/src/tictactoe/Main.java">
       <provider selected="true" editor-type-id="StudyEditor">
         <state>
           <EduEditorState>
-            <MainEditorState relative-caret-position="680">
-              <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
+            <MainEditorState relative-caret-position="255">
+              <caret line="380" column="8" lean-forward="true" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#printmat#0;class#Main#0" />
+                <element signature="method#userStep#0;class#Main#0" />
+                <element signature="method#printState#0;class#Main#0" />
+                <element signature="method#easyLevel#0;class#Main#0" />
+                <element signature="method#mediumLevel#0;class#Main#0" />
+                <element signature="e#5592#6265#1" />
+                <element signature="e#7698#11771#0" />
+                <element signature="method#hardLevel#0;class#Main#0" />
+                <element signature="method#main#0;class#Main#0" />
               </folding>
             </MainEditorState>
           </EduEditorState>
